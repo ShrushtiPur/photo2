@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PhotoMastery - Master Photography Online</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">📷 PhotoMastery</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#" onclick="goToLMS()">Courses</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#help">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Master Photography From Scratch</h1>
+    <p>New Courses Launching Soon:</p>
+    <ul class="courses">
+      <li><strong>Landscape Photography</strong> - Launch: 20th June 2025</li>
+      <li><strong>Portrait Photography</strong> - Launch: 25th June 2025</li>
+    </ul>
+    <button onclick="goToLMS()">Explore Courses</button>
+  </section>
+
+  <section id="about">
+    <h2>About the Photographer</h2>
+    <p>John Doe is an award-winning photographer with 15 years of experience in nature, portrait, and commercial photography. He's taught over 30,000 students globally.</p>
+  </section>
+
+  <section id="help">
+    <h2>Need Help?</h2>
+    <form onsubmit="sendSupport(event)">
+      <label>Name:</label><br />
+      <input type="text" id="name" required /><br />
+      <label>Email:</label><br />
+      <input type="email" id="email" required /><br />
+      <label>Issue:</label><br />
+      <textarea id="issue" required></textarea><br />
+      <button type="submit">Submit</button>
+    </form>
+    <p id="ticketStatus"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 PhotoMastery. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
